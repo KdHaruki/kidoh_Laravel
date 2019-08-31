@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 Route::get('/top','TopController@index');
 Route::post('/top','TopController@complite');
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
