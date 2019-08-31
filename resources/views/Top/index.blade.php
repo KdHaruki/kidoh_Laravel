@@ -80,8 +80,15 @@
       </td>
     </tr>
   </table>
-
-
+<form action="/top" method="post">
+  @csrf
+  <input type="text" name="progressName">
+  <input type="text" name="progressType">
+  <input type="text" name="progressFavorite">
+  <input type="text" name="progressDislike">
+  <input type="text" name="progressInscription">
+  <input type="submit">
+</form>
 <script>
 
 /*****************************************************************
