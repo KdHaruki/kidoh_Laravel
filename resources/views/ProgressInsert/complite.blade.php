@@ -36,6 +36,6 @@
       </td>
     </tr>
   </table>
-<meta http-equiv="refresh" content=" 3; url=./top">
+<meta http-equiv="refresh" content=" 1; url=./progressinsert">
 </body>
 </html>

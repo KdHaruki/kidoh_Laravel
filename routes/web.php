@@ -17,8 +17,18 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/top','TopController@index');
-Route::post('/top','TopController@complite');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/top', function () {
+    return view('top.index');
+});
+
+Route::get('/progress', 'ProgressController@index');
+
+Route::get('/progressinsert', function () {
+    return view('progressinsert.index');
+});
+
+Route::post('/progressinsert', 'ProgressInsertController@complite');

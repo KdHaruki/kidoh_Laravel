@@ -12,13 +12,15 @@
         <label id="nav-open" for="nav-input"><span></span></label>
         <label class="nav-unshown" id="nav-close" for="nav-input"></label>
         <div id="nav-content">
+          <td><a href="progress">プログレス一覧</a></td>
+          <td><a href="progressinsert">プログレス登録</a></td>
         </div>
     </div>
   </header>
   <table>
     <tr>
       <td class="kakomi-tape3-td">
-        <div class="kakomi-tape3"><span class="title-tape3">TOP記事</span>
+        <div class="kakomi-tape3"><span class="title-tape3">Ange Vierge</span>
           <div>テキスト</div>
           <div>テキスト</div>
           <div>テキスト</div>
@@ -26,7 +28,7 @@
         </div>
       </td>
       <td class="kakomi-tape3-td">
-        <div class="kakomi-tape3"><span class="title-tape3">TOP記事</span>
+        <div class="kakomi-tape3"><span class="title-tape3">Information Technology</span>
           <div>テキスト</div>
           <div>テキスト</div>
           <div>テキスト</div>
@@ -80,15 +82,6 @@
       </td>
     </tr>
   </table>
-<form action="/top" method="post">
-  @csrf
-  <input type="text" name="progressName">
-  <input type="text" name="progressType">
-  <input type="text" name="progressFavorite">
-  <input type="text" name="progressDislike">
-  <input type="text" name="progressInscription">
-  <input type="submit">
-</form>
 <script>
 
 /*****************************************************************
